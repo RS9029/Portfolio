@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="night-mode" transform="translate(-2321 74)">
+    <g id="moon-ring" transform="translate(2321 -74)" fill="none" stroke="#707070" stroke-width="3" opacity="0.45">
+      <circle cx="22.5" cy="22.5" r="22.5" stroke="none"/>
+      <circle cx="22.5" cy="22.5" r="21" fill="none"/>
+    </g>
+    <path id="moon" d="M13.341,22.273a11.521,11.521,0,0,0,8.877-4.124.524.524,0,0,0-.516-.842A8.889,8.889,0,0,1,11.065,8.74,8.683,8.683,0,0,1,15.6,1.153a.519.519,0,0,0-.168-.967A11.816,11.816,0,0,0,13.341,0,11.284,11.284,0,0,0,1.913,11.136,11.284,11.284,0,0,0,13.341,22.273Z" transform="translate(2331.804 -62.773)" fill="#989898"/>
+  </g>
+</svg>

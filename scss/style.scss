@@ -1,0 +1,1093 @@
+@import "variables";
+@import "keyframes";
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headings{
+    font-family: sans-serif;
+}
+
+
+// MAIN ANIMATION
+
+
+.main-animation{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    position: relative;
+}
+
+#island{
+    width: 40rem;
+    position: absolute;
+    left: 2.5%;
+    z-index: 10;
+    max-height: 100%;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+#main-heading{
+    font-family: $headerfont;
+    
+
+    & span{
+        color: $sunny;
+    }
+}
+
+#moon-sun{
+    width: 15rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    z-index: -4;
+}
+
+#night-mode-button{
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    z-index: 5;
+}
+
+.typing{
+    
+    font-family: sans-serif;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.typing::after{
+    content: '';
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    margin-left: 1rem;
+    background-color: black;
+    animation: blink 400ms linear infinite;
+}
+
+//clouds
+
+.clouds{
+    position: absolute;
+    left: -30rem;
+    z-index: -3;
+}
+
+#cloud-1{
+    width: 20rem;
+    top: 3rem;
+    animation: float 35s linear infinite;
+}
+
+#cloud-2{
+    width: 15rem;
+    top: 10rem;
+    animation: float 35s linear infinite;
+    animation-delay: 10s;
+}
+
+
+#cloud-3{
+    width: 20rem;
+    top: -5rem;
+    animation: float 20s linear infinite;
+}
+
+#cloud-4{
+    width: 15rem;
+    top: 25rem;
+    animation: float 30s linear infinite;
+    animation-delay: 10s;
+}
+
+#cloud-5{
+    width: 20rem;
+    top: -5rem;
+    animation: float 25s linear infinite;
+}
+
+#cloud-6{
+    width: 15rem;
+    top: 5rem;
+    animation: float 35s linear infinite;
+    animation-delay: 10s;
+}
+
+
+
+//leaves
+
+.leaves{
+    position: absolute;
+    width: 2rem;
+    z-index: 3;
+    left: 20%;
+    animation: leaf 10s linear infinite;
+}
+
+#leaf-1{
+    top: 16rem;
+    animation-delay: 2s;
+}
+
+#leaf-2{
+    top: 18rem;
+}
+
+#leaf-3{
+    top: 20rem;
+    animation-delay: 6s;
+}
+
+#leaf-4{
+    top: 18rem;
+    animation-delay: 4s;
+}
+
+#leaf-5{
+    top: 18rem;
+    animation-delay: 8s;
+}
+
+//stars
+
+.stars{
+    
+    position: absolute;
+    animation: shine 3s ease-in-out infinite;
+    z-index: -4;
+}
+
+#star-1{
+    width: 0.5rem;
+    top: 2rem;
+    left: 25rem;
+
+}
+
+#star-2{
+    width: 0.5rem;
+    top: 10rem;
+    left: 40rem;
+
+}
+
+#star-3{
+    width: 0.5rem;
+    bottom: 4rem;
+    left: 50rem;
+
+}
+
+#star-4{
+    width: 0.5rem;
+    bottom: 10rem;
+    right: 50rem;
+
+}
+
+#star-5{
+    width: 0.5rem;
+    bottom: 25rem;
+    left: 70rem;
+
+}
+
+#star-6{
+    width: 0.5rem;
+    top: 20rem;
+    right: 10rem;
+
+}
+
+#star-7{
+    width: 0.5rem;
+    top: 15rem;
+    right: 60rem;
+
+}
+
+#star-8{
+    width: 0.5rem;
+    bottom: 2rem;
+    right: 4rem;
+
+}
+
+#star-9{
+    width: 0.5rem;
+    bottom: 30rem;
+    left: 4rem;
+
+}
+
+#star-10{
+    width: 0.5rem;
+    bottom: 20rem;
+    right: 25rem;
+
+}
+
+#star-11{
+    width: 0.5rem;
+    top: 2rem;
+    left: 25rem;
+
+}
+
+#star-12{
+    width: 0.5rem;
+    top: 10rem;
+    left: 40rem;
+
+}
+
+#star-13{
+    width: 0.5rem;
+    bottom: 4rem;
+    left: 50rem;
+
+}
+
+#star-14{
+    width: 0.5rem;
+    bottom: 10rem;
+    right: 50rem;
+
+}
+
+#star-15{
+    width: 0.5rem;
+    bottom: 25rem;
+    left: 70rem;
+
+}
+
+#star-16{
+    width: 0.5rem;
+    top: 20rem;
+    right: 10rem;
+
+}
+
+#star-17{
+    width: 0.5rem;
+    top: 15rem;
+    right: 60rem;
+
+}
+
+#star-18{
+    width: 0.5rem;
+    bottom: 2rem;
+    right: 4rem;
+
+}
+
+#star-19{
+    width: 0.5rem;
+    bottom: 30rem;
+    left: 4rem;
+
+}
+
+#star-20{
+    width: 0.5rem;
+    bottom: 20rem;
+    right: 25rem;
+
+}
+
+
+#star-21{
+    width: 0.5rem;
+    top: 2rem;
+    left: 25rem;
+
+}
+
+#star-22{
+    width: 0.5rem;
+    top: 10rem;
+    left: 40rem;
+
+}
+
+#star-23{
+    width: 0.5rem;
+    bottom: 4rem;
+    left: 50rem;
+
+}
+
+#star-24{
+    width: 0.5rem;
+    bottom: 10rem;
+    right: 50rem;
+
+}
+
+#star-25{
+    width: 0.5rem;
+    bottom: 25rem;
+    left: 70rem;
+
+}
+
+#star-26{
+    width: 0.5rem;
+    top: 20rem;
+    right: 10rem;
+
+}
+
+#star-27{
+    width: 0.5rem;
+    top: 15rem;
+    right: 60rem;
+
+}
+
+#star-28{
+    width: 0.5rem;
+    bottom: 2rem;
+    right: 4rem;
+
+}
+
+#star-29{
+    width: 0.5rem;
+    bottom: 30rem;
+    left: 4rem;
+
+}
+
+#star-30{
+    width: 0.5rem;
+    bottom: 20rem;
+    right: 25rem;
+
+}
+
+
+#star-31{
+    width: 0.5rem;
+    top: 2rem;
+    left: 25rem;
+
+}
+
+#star-32{
+    width: 0.5rem;
+    top: 10rem;
+    left: 40rem;
+
+}
+
+#star-33{
+    width: 0.5rem;
+    bottom: 4rem;
+    left: 50rem;
+
+}
+
+#star-34{
+    width: 0.5rem;
+    bottom: 10rem;
+    right: 50rem;
+
+}
+
+#star-35{
+    width: 0.5rem;
+    bottom: 25rem;
+    left: 70rem;
+
+}
+
+#star-36{
+    width: 0.5rem;
+    top: 20rem;
+    right: 10rem;
+
+}
+
+#star-37{
+    width: 0.5rem;
+    top: 15rem;
+    right: 60rem;
+
+}
+
+#star-38{
+    width: 0.5rem;
+    bottom: 2rem;
+    right: 4rem;
+
+}
+
+#star-39{
+    width: 0.5rem;
+    bottom: 30rem;
+    left: 4rem;
+
+}
+
+#star-40{
+    width: 0.5rem;
+    bottom: 20rem;
+    right: 25rem;
+
+}
+
+
+
+//PROJECTS
+
+
+
+#project-header{
+    font-size: 60px;
+}
+
+.projects-section{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0rem;
+    position: relative;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & button{
+        width: 10rem;
+        height: 2rem;
+        background-color: rgb(166, 233, 255);
+        border: black 2px solid;
+        border-radius: 15px;
+        margin: 0.5rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+
+    
+}
+
+.projects-container{
+    width: 80%;
+    height: auto;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+
+    & .project{
+        width: 100%;
+        height: 20rem;
+        border: solid 1px black;
+        display: none;
+        justify-self: center;
+        position: relative;
+        
+        &:hover{
+            .project-info{
+                transform: scaleY(1);
+            }
+        }
+    }
+
+
+
+
+    & .active{
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.project-info{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(#404040, 0.9);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all ease 0.2s;
+
+
+    & button{
+        width: 6rem;
+        height: 2rem;
+        margin-left: 2rem;
+        cursor: pointer;
+    }
+    & img{
+        margin-right: 2rem;
+    }
+}
+
+.sample-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+
+// Second Animation
+
+.second-animation{
+
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0rem;
+    position: relative;
+
+}
+
+.about-header{
+    font-size: 80px;
+}
+
+#about-1{
+    margin-right: 40rem;
+    & span{
+        color: $sunny;
+    }
+}
+
+#about-2{
+    margin-left: 40rem;
+
+    & span{
+        color: $sunny;
+    }
+}
+
+//About 
+
+.about-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0rem;
+    position: relative;
+    animation: bounce 3s linear infinite;
+
+
+
+}
+
+#about-me{
+    width: 60%;
+    max-height: 20rem;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(#404040, 0.7);
+    border-radius: 25px;
+}
+
+#man-sitting{
+    width: 80%;
+}
+
+
+
+
+//contact
+
+.contact-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0rem;
+    position: relative;
+}
+
+.contact-form{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .inputs{
+        display: flex;
+        flex-direction: column;
+        
+        & input{
+            margin: 0.5rem 0rem;
+            width: 30rem;
+            height: 2rem;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid grey;
+            color: white;
+        }
+    }
+
+
+}
+
+#message-box{
+    width: 25rem;
+    height: 12rem;
+    margin: 0rem 1rem;
+    background-color: transparent;
+    border: 2px solid grey;
+}
+
+#wwm-header{
+    font-size: 60px;
+    margin: 5rem 0rem;
+}
+
+// footer
+
+#footer{
+    width: 100vw;
+    height: auto;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 5%;
+    color: #005061;
+    font-family: sans-serif;
+
+    & ul{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+
+        & li{
+            margin: 0rem 1rem;
+            font-weight: bold;
+            font-family: sans-serif;
+
+            & a{
+                cursor: pointer;
+                text-decoration: none;
+                color: #005061;
+            }
+        }
+    }
+}
+
+//waves
+
+#waves-container{
+    width: 100vw;
+    height: 80vh;
+    min-height: 35rem;
+}
+
+#waves{
+    width: 100%;
+    height: 100%;
+}
+
+#wave-1{
+    animation: bounceDeep 3s linear infinite;
+}
+
+#wave-2{
+    animation: bounceDeep 6s linear infinite;
+}
+
+#wave-3{
+    animation: bounceDeep 9s linear infinite;
+}
+
+#wave-4{
+    animation: bounceDeep 6s linear infinite;
+}
+
+#wave-5{
+    animation: bounceDeep 3s linear infinite;
+}
+
+#wave-6{
+    animation: bounceDeep 9s linear infinite;
+}
+
+
+
+//MEDIA QUERIESS
+
+//mobile 
+@media screen and (max-width:425px){
+
+    //main animation
+    
+    .main-animation{
+        height: 50vh;
+        justify-content: center;
+    }
+
+    #island{
+        width: 15rem;
+    }
+
+    #main-heading{
+        font-size: 20px;
+        margin-top: 30rem;
+    }
+
+    #moon-sun{
+        width: 5rem;
+    }
+
+    .clouds{
+        transform: scale(0.5);
+    }
+    .leaves{
+        display: none;
+    }
+
+
+    // projects
+
+    #project-header{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+
+    .buttons{
+
+        & button{
+            width: 4rem;
+            margin: 0.5rem 0.1rem;
+            font-size: 10px;
+        }
+    }
+
+    //second animation
+
+    .about-header{
+        font-size: 30px;
+    }
+
+    #about-1{
+        margin-right: 10rem;
+    }
+
+    #about-2{
+        margin-left: 10rem;
+    }
+
+    //about section
+
+
+
+    #about-me{
+        width: 80%;
+        font-size: 12px;
+    }
+
+    //contact section
+
+    #wwm-header{
+        font-size: 40px;
+    }
+
+    .contact-form{
+        flex-direction: column;
+    }
+
+    .contact-form .inputs input, #message-box{
+        width: 15rem;
+    }
+
+    
+    
+}
+
+
+//tablet
+
+
+@media screen and(min-width:426px) and (max-width:769px){
+
+
+    //main animation
+    
+    
+    #island{
+        width: 20rem;
+    } 
+
+    #main-heading{
+        font-size: 25px;
+        margin-top: 40rem;
+    }
+
+    #moon-sun{
+        width: 10rem;
+    }
+
+    .clouds{
+        transform: scale(0.7);
+    }
+
+    .leaves{
+        display: none;
+    }
+
+    // projects
+
+    #project-header{
+        font-size: 40px;
+    }
+
+    .buttons{
+
+        & button{
+            width: 4.5rem;
+            font-size: 11px;
+            margin: 0.5rem 0.1rem;
+        }
+    }
+
+    .projects-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    //second animation
+
+    .about-header{
+        font-size: 40px;
+    }
+
+    #about-1{
+        margin-right: 15rem;
+    }
+
+    #about-2{
+        margin-left: 15rem;
+    }
+
+    // about
+
+    #about-me{
+        width: 80%;
+        font-size: 16px;
+    }
+
+
+
+
+
+    //contact section
+
+    #wwm-header{
+        font-size: 40px;
+    }
+
+    .contact-form{
+        flex-direction: column;
+    }
+
+    // about 
+
+
+
+}
+
+//laptop
+
+@media screen and(min-width:770px) and (max-width:1025px){
+
+
+    //main animation
+    #island{
+        width: 25rem;
+    }
+
+    #main-heading{
+        margin-left: 25rem;
+    }
+
+    #moon-sun{
+        width: 10rem;
+    }
+
+    .leaves{
+        display: none;
+    }
+
+    // projects
+
+
+    .buttons{
+
+        & button{
+            width: 8rem;
+
+        }
+    }
+
+    .projects-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    //second animation
+    .about-header{
+        font-size: 50px;
+    }
+
+    #about-1{
+        margin-right: 18rem;
+    }
+
+    #about-2{
+        margin-left: 18rem;
+    }
+
+    // about
+
+    #about-me{
+        width: 80%;
+        font-size: 18px;
+    }
+
+    
+}
+
+//Laptop L
+
+@media screen and(min-width:1026px) and (max-width:1441px){
+
+    //main animation
+    #island{
+        width: 30rem;
+    }
+
+    #main-heading{
+        margin-left: 30rem;
+        font-size: 35px;
+    }
+
+    #moon-sun{
+        width: 10rem;
+    }
+
+    //second animation
+    .about-header{
+        font-size: 60px;
+    }
+
+    #about-1{
+        margin-right: 25rem;
+    }
+
+    #about-2{
+        margin-left: 25rem;
+    }
+
+    // about 
+
+    #about-me{
+        width: 80%;
+    }
+}
+
+
+
+//4k
+
+@media screen and(min-width:1442px) and (max-width:2561px){
+
+    //main animation 
+
+    #main-heading{
+        font-size: 60px;
+        margin-left: 40rem;
+    }
+
+    //projects
+
+    .projects-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    
+
+}
+
+// sm mobile
+
+@media screen and (max-width:340px){
+    //projects
+
+    .buttons{
+
+        & button{
+            width: 3.3rem;
+            margin: 0.5rem 0.1rem;
+            font-size: 8px;
+            
+        }
+    }
+
+}

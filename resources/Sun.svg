@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="270" height="270" viewBox="0 0 270 270">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.736" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe097"/>
+      <stop offset="1" stop-color="#fc0"/>
+    </radialGradient>
+    <filter id="Ellipse_4" x="0" y="0" width="270" height="270" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-color="#fed844" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Sun" transform="translate(45 45)">
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="90" cy="90" r="90" fill="#f9ed9c"/>
+    <g transform="matrix(1, 0, 0, 1, -45, -45)" filter="url(#Ellipse_4)">
+      <circle id="Ellipse_4-2" data-name="Ellipse 4" cx="60" cy="60" r="60" transform="translate(75 75)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+</svg>
