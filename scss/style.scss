@@ -455,6 +455,43 @@ body{
 
 }
 
+// RESUME DOWNLOAD
+
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    background-color: $bg-day;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+
+    & h1{
+        font: bold 35px sans-serif;
+    }
+
+    & a{
+        text-decoration: none;
+    }
+
+    & button{
+        width: 10rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 18px sans-serif;
+        background-color: rgb(166, 233, 255);
+
+        & img{
+            transform: scale(0.7);
+        }
+    }
+
+}
+
 
 
 //PROJECTS
