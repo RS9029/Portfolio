@@ -171,14 +171,15 @@
 
         <div class="contact-container">
             <h1 id="wwm-header" class="headings">Work with Me</h1>
-            <form action="" class="contact-form">
+            <form action="contact.php" method="POST" class="contact-form">
                 <div class="inputs">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="E-mail">
-                    <input type="text" placeholder="Contact Number">
-                    <input type="text" placeholder="Reference URL">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="text" name="phoneNumber" placeholder="Contact Number">
+                    <input type="text" name="urls" placeholder="Reference URL">
                 </div>
-                <textarea type="text" id="message-box" placeholder="Message"></textarea>
+                <textarea type="text" id="message-box" name="message" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
             </form>
 
             <img src="resources/star.svg" style="display: none;" alt="star" class="stars" id="star-31">
