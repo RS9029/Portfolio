@@ -652,6 +652,16 @@ body{
     width: 80%;
     height: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.contact-wrapper{
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -669,8 +679,6 @@ body{
             color: white;
         }
     }
-
-
 }
 
 #message-box{
@@ -679,6 +687,19 @@ body{
     margin: 0rem 1rem;
     background-color: transparent;
     border: 2px solid grey;
+}
+
+#submit-btn{
+    width: 10rem;
+    height: 2rem;
+    margin-top: 2rem;
+    background-color:rgb(79, 216, 235);
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgb(117, 221, 255);
+    }
 }
 
 #wwm-header{
@@ -850,7 +871,7 @@ body{
         font-size: 40px;
     }
 
-    .contact-form{
+    .contact-wrapper{
         flex-direction: column;
     }
 
@@ -944,11 +965,13 @@ body{
         font-size: 40px;
     }
 
-    .contact-form{
+    .contact-wrapper{
         flex-direction: column;
-    }
 
-    // about 
+        & .inputs input{
+            width: 25rem;
+        }
+    }
 
 
 
@@ -1009,6 +1032,12 @@ body{
     #about-me{
         width: 80%;
         font-size: 18px;
+    }
+
+    // contact
+
+    .contact-wrapper{
+        flex-direction: column;
     }
 
     

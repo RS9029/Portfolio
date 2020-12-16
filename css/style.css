@@ -623,14 +623,22 @@ body {
   width: 80%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contact-form .inputs {
+
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-wrapper .inputs {
   display: flex;
   flex-direction: column;
 }
-.contact-form .inputs input {
+.contact-wrapper .inputs input {
   margin: 0.5rem 0rem;
   width: 30rem;
   height: 2rem;
@@ -646,6 +654,18 @@ body {
   margin: 0rem 1rem;
   background-color: transparent;
   border: 2px solid grey;
+}
+
+#submit-btn {
+  width: 10rem;
+  height: 2rem;
+  margin-top: 2rem;
+  background-color: #4fd8eb;
+  border: none;
+  cursor: pointer;
+}
+#submit-btn:hover {
+  background-color: #75ddff;
 }
 
 #wwm-header {
@@ -787,7 +807,7 @@ body {
     font-size: 40px;
   }
 
-  .contact-form {
+  .contact-wrapper {
     flex-direction: column;
   }
 
@@ -852,8 +872,11 @@ body {
     font-size: 40px;
   }
 
-  .contact-form {
+  .contact-wrapper {
     flex-direction: column;
+  }
+  .contact-wrapper .inputs input {
+    width: 25rem;
   }
 }
 @media screen and (min-width: 770px) and (max-width: 1025px) {
@@ -896,6 +919,10 @@ body {
   #about-me {
     width: 80%;
     font-size: 18px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1026px) and (max-width: 1441px) {
