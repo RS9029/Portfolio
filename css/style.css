@@ -188,294 +188,227 @@ body {
   animation-delay: 10s;
 }
 
-.leaves {
-  position: absolute;
-  width: 2rem;
-  z-index: 3;
-  left: 20%;
-  animation: leaf 10s linear infinite;
-}
-
-#leaf-1 {
-  top: 16rem;
-  animation-delay: 2s;
-}
-
-#leaf-2 {
-  top: 18rem;
-}
-
-#leaf-3 {
-  top: 20rem;
-  animation-delay: 6s;
-}
-
-#leaf-4 {
-  top: 18rem;
-  animation-delay: 4s;
-}
-
-#leaf-5 {
-  top: 18rem;
-  animation-delay: 8s;
-}
-
 .stars {
   position: absolute;
   animation: shine 3s ease-in-out infinite;
   z-index: -4;
+  width: 0.5rem;
 }
 
 #star-1 {
-  width: 0.5rem;
   top: 2rem;
   left: 25rem;
 }
 
 #star-2 {
-  width: 0.5rem;
   top: 10rem;
   left: 40rem;
 }
 
 #star-3 {
-  width: 0.5rem;
   bottom: 4rem;
   left: 50rem;
 }
 
 #star-4 {
-  width: 0.5rem;
   bottom: 10rem;
   right: 50rem;
 }
 
 #star-5 {
-  width: 0.5rem;
   bottom: 25rem;
   left: 70rem;
 }
 
 #star-6 {
-  width: 0.5rem;
   top: 20rem;
   right: 10rem;
 }
 
 #star-7 {
-  width: 0.5rem;
   top: 15rem;
   right: 60rem;
 }
 
 #star-8 {
-  width: 0.5rem;
   bottom: 2rem;
   right: 4rem;
 }
 
 #star-9 {
-  width: 0.5rem;
   bottom: 30rem;
   left: 4rem;
 }
 
 #star-10 {
-  width: 0.5rem;
   bottom: 20rem;
   right: 25rem;
 }
 
 #star-11 {
-  width: 0.5rem;
   top: 2rem;
   left: 25rem;
 }
 
 #star-12 {
-  width: 0.5rem;
   top: 10rem;
   left: 40rem;
 }
 
 #star-13 {
-  width: 0.5rem;
   bottom: 4rem;
   left: 50rem;
 }
 
 #star-14 {
-  width: 0.5rem;
   bottom: 10rem;
   right: 50rem;
 }
 
 #star-15 {
-  width: 0.5rem;
   bottom: 25rem;
   left: 70rem;
 }
 
 #star-16 {
-  width: 0.5rem;
   top: 20rem;
   right: 10rem;
 }
 
 #star-17 {
-  width: 0.5rem;
   top: 15rem;
   right: 60rem;
 }
 
 #star-18 {
-  width: 0.5rem;
   bottom: 2rem;
   right: 4rem;
 }
 
 #star-19 {
-  width: 0.5rem;
   bottom: 30rem;
   left: 4rem;
 }
 
 #star-20 {
-  width: 0.5rem;
   bottom: 20rem;
   right: 25rem;
 }
 
 #star-21 {
-  width: 0.5rem;
   top: 2rem;
   left: 25rem;
 }
 
 #star-22 {
-  width: 0.5rem;
   top: 10rem;
   left: 40rem;
 }
 
 #star-23 {
-  width: 0.5rem;
   bottom: 4rem;
   left: 50rem;
 }
 
 #star-24 {
-  width: 0.5rem;
   bottom: 10rem;
   right: 50rem;
 }
 
 #star-25 {
-  width: 0.5rem;
   bottom: 25rem;
   left: 70rem;
 }
 
 #star-26 {
-  width: 0.5rem;
   top: 20rem;
   right: 10rem;
 }
 
 #star-27 {
-  width: 0.5rem;
   top: 15rem;
   right: 60rem;
 }
 
 #star-28 {
-  width: 0.5rem;
   bottom: 2rem;
   right: 4rem;
 }
 
 #star-29 {
-  width: 0.5rem;
   bottom: 30rem;
   left: 4rem;
 }
 
 #star-30 {
-  width: 0.5rem;
   bottom: 20rem;
   right: 25rem;
 }
 
 #star-31 {
-  width: 0.5rem;
   top: 2rem;
   left: 25rem;
 }
 
 #star-32 {
-  width: 0.5rem;
   top: 10rem;
   left: 40rem;
 }
 
 #star-33 {
-  width: 0.5rem;
   bottom: 4rem;
   left: 50rem;
 }
 
 #star-34 {
-  width: 0.5rem;
   bottom: 10rem;
   right: 50rem;
 }
 
 #star-35 {
-  width: 0.5rem;
   bottom: 25rem;
   left: 70rem;
 }
 
 #star-36 {
-  width: 0.5rem;
   top: 20rem;
   right: 10rem;
 }
 
 #star-37 {
-  width: 0.5rem;
   top: 15rem;
   right: 60rem;
 }
 
 #star-38 {
-  width: 0.5rem;
   bottom: 2rem;
   right: 4rem;
 }
 
 #star-39 {
-  width: 0.5rem;
   bottom: 30rem;
   left: 4rem;
 }
 
 #star-40 {
-  width: 0.5rem;
   bottom: 20rem;
   right: 25rem;
 }
 
 .resume-container {
+  width: 60%;
+  max-width: 30rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  background-color: #ddf0f8;
-  padding: 2rem;
+  background-color: rgba(231, 231, 231, 0.6);
   border-radius: 20px;
+  padding: 2rem;
   text-align: center;
+  animation: bounceDeep 3s linear infinite;
 }
 .resume-container h1 {
   font: bold 35px sans-serif;
@@ -713,6 +646,27 @@ body {
   position: relative;
 }
 
+.fish {
+  width: 4rem;
+  position: absolute;
+  left: -5rem;
+  animation: float 15s linear infinite;
+}
+
+#fish-1 {
+  bottom: 4rem;
+  animation-delay: 1s;
+}
+
+#fish-2 {
+  bottom: 8rem;
+}
+
+#fish-3 {
+  bottom: 12rem;
+  animation-delay: 2s;
+}
+
 .links {
   display: flex;
   flex-direction: column;
@@ -814,6 +768,10 @@ body {
     width: 4rem;
     margin: 0.5rem 0.1rem;
     font-size: 10px;
+  }
+
+  .second-animation {
+    margin: 3rem 0rem;
   }
 
   .about-header {

@@ -4,6 +4,7 @@
         <title>Rafael Silva</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="/resources/icon.svg">
     </head>
     <body style="background-color: rgb(185, 234, 255);">
 
@@ -29,13 +30,7 @@
             <img src="resources/Cloud.svg" alt="cloud" class="clouds" id="cloud-1">
             <img src="resources/Cloud.svg" alt="cloud" class="clouds" id="cloud-2">
 
-            <!--leaves-->
-
-            <img src="resources/leaf.svg" alt="leaf" class="leaves" id="leaf-1">
-            <img src="resources/leaf.svg" alt="leaf" class="leaves" id="leaf-2">
-            <img src="resources/leaf.svg" alt="leaf" class="leaves" id="leaf-3">
-            <img src="resources/leaf.svg" alt="leaf" class="leaves" id="leaf-4">
-            <img src="resources/leaf.svg" alt="leaf" class="leaves" id="leaf-5">
+            
 
             <!--stars-->
               <img src="resources/star.svg" style="display: none;" alt="star" class="stars" id="star-1">
@@ -81,21 +76,21 @@
                 <div class="most-popular latest react project ">
                     <img class="sample-image" src = "/resources/fly-away-sample.PNG"></img>
                     <div class="project-info">
-                        <a href="http://flyaway.rafaelsilvadev.me" target="_blank"><button>View</button></a>
+                        <a href="https://flyaway.rafaelsilvadev.me" target="_blank"><button>View</button></a>
                         <a href=""><Img src = "/resources/github-white.svg"></Img></a>
                     </div>
                 </div>
                 <div class="latest project">
                     <img class="sample-image" src = "./resources/barber-kutz-thumbnail.PNG"></img>
                     <div class="project-info">
-                        <a href="http://barberkutz.rafaelsilvadev.me" target="_blank"><button>View</button></a>
+                        <a href="https://barberkutz.rafaelsilvadev.me" target="_blank"><button>View</button></a>
                         <a href=""><Img src = "/resources/github-white.svg"></Img></a>
                     </div>
                 </div>
                 <div class="js project">
                     <img class="sample-image" src = "/resources/marvel-tumbnail.jpg"></img>
                     <div class="project-info">
-                        <a href="http://heroindex.rafaelsilvadev.me" target="_blank"><button>View</button></a>
+                        <a href="https://heroindex.rafaelsilvadev.me" target="_blank"><button>View</button></a>
                         <a href=""><Img src = "/resources/github-white.svg"></Img></a>
                     </div>
                 </div>
@@ -165,7 +160,9 @@
 
             <img src="resources/Cloud.svg" alt="cloud" class="clouds" id="cloud-3">
             <img src="resources/Cloud.svg" alt="cloud" class="clouds" id="cloud-4">
-            <p id="about-me">First and foremost I would like to thank you for taking the time to look at my portfolio. I am a self taught developer from London Ontario, Canada. I started my developer journey back in 2018, developing very basic games as a hobby. While also working a full time job I decided to leave my job and dedicate all my time to extend my hobby into a working profession by starting web development. This new world has brought me great joy in to discovering what working with your passion is really all about. I look forward to furthering my career working alongside great businesses and individuals doing the job I love.  </p>
+
+            <!-- about container -->
+                <p id="about-me">First and foremost I would like to thank you for taking the time to look at my portfolio. I am a self taught developer from London Ontario, Canada. I started my developer journey back in 2018, developing very basic games as a hobby while also working a full time job. I decided to leave my job and dedicate all my time to extend my hobby into a working profession by starting web development. This new world has brought me great joy, discovering what working with your passion is really all about. I look forward to furthering my career working alongside great businesses and individuals doing the job I love.</p>
 
         </div>
 
@@ -182,12 +179,12 @@
             <form action="contact.php" method="POST" class="contact-form">
                 <div class="contact-wrapper">
                     <div class="inputs">
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="text" name="email" placeholder="E-mail">
-                        <input type="text" name="phoneNumber" placeholder="Contact Number">
-                        <input type="text" name="urls" placeholder="Reference URL">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <input type="number" name="phoneNumber" placeholder="Contact Number">
+                        <input type="url" name="urls" placeholder="Reference URL">
                     </div>
-                    <textarea type="text" id="message-box" name="message" placeholder="Message"></textarea>
+                    <textarea type="text" id="message-box" name="message" placeholder="Message" required></textarea>
 
                 </div>
                 <button id="submit-btn" type="submit">Send</button>
@@ -220,6 +217,12 @@
                     <path class="waves" id="wave-1" d="M258,542.962c-28.465-1.252-312.25,84.222-312.25,89.476V1197.8h2999.99V718.7c0,199.774-3.6-9.75-7.915-10.829-154.173-38.583-265.351-36.906-420.261-41.782-128.255-4.036-423.067,80.213-551.669,91-251.469,21.079-307.228-113.815-570.272-109.153-273.993,4.853-623.37,81.409-894.961,67.747-74.621-6.849-623.233-101.82-247.7-166.368,7.927-4.2,9.073-6.162,5.007-6.341Z" transform="translate(0 -98.023)" fill="rgba(116,225,239,0.25)" fill-rule="evenodd"/>
                 </g>
             </svg>
+
+            <!-- fishes -->
+
+            <img src="/resources/fish.svg" alt="fish" id="fish-1" class="fish">
+            <img src="/resources/fish.svg" alt="fish" id="fish-2" class="fish">
+            <img src="/resources/fish.svg" alt="fish" id="fish-3" class="fish">
 
             <div class="links">
                 <h1>Links</h1>
