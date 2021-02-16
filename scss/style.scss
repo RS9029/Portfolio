@@ -410,6 +410,7 @@ body{
         justify-content: center;
         font: 18px sans-serif;
         background-color: rgb(166, 233, 255);
+        border-radius: 15px;
 
         & img{
             transform: scale(0.7);
@@ -513,6 +514,11 @@ body{
         height: 2rem;
         margin-left: 2rem;
         cursor: pointer;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+        border:2px solid white;
+        font-weight: bold;
     }
     & img{
         margin-right: 2rem;
@@ -525,7 +531,6 @@ body{
     object-fit: cover;
     position: absolute;
     z-index: -1;
-
 }
 
 
@@ -533,7 +538,6 @@ body{
 // Second Animation
 
 .second-animation{
-
     width: 80vw;
     height: 50vh;
     display: flex;
@@ -575,9 +579,6 @@ body{
     margin: 10rem 0rem;
     position: relative;
     animation: bounce 3s linear infinite;
-
-
-
 }
 
 #about-me{
@@ -595,8 +596,6 @@ body{
 #man-sitting{
     width: 80%;
 }
-
-
 
 
 //contact
@@ -639,8 +638,17 @@ body{
             background-color: transparent;
             border: none;
             border-bottom: 1px solid grey;
-            color: white;
+            color: black;
         }
+    }
+}
+
+.contact-night{
+    color: white !important;
+    border-color: white !important;
+
+    &::placeholder{
+        color: white !important;
     }
 }
 
@@ -654,11 +662,14 @@ body{
 
 #submit-btn{
     width: 10rem;
-    height: 2rem;
+    height: 2.5rem;
     margin-top: 2rem;
     background-color:rgb(79, 216, 235);
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
 
     &:hover{
         background-color: rgb(117, 221, 255);
@@ -730,6 +741,10 @@ body{
             }
         }
     }
+}
+
+#footer-icons{
+    padding: 0;
 }
 
 //waves

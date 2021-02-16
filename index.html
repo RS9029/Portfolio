@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Rafael Silva</title>
+        <link rel="icon" href="./resources/icon.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="/resources/icon.svg">
     </head>
     <body style="background-color: rgb(185, 234, 255);">
 
@@ -46,12 +46,7 @@
 
         </div>
 
-        <!-- Download Resume -->
-
-        <div class="resume-container">
-            <h1>Download My Resume</h1>
-            <a href="/resources/Resume.pdf" download><button><img src="/resources/download.svg" alt=""> Resume</button></a>
-        </div>
+        
 
 
         <!--Projects-->
@@ -61,15 +56,13 @@
                 <div class="row-1">
                     <button id="all">All</button>
                     <button id="latest">Latest</button>
-                    <button id="most-popular">Popular</button>
-                    <button id="js">Javascript</button>
-                    <button id="sass">Sass</button>
+                    <button id="js-btn">Javascript</button>
+                    <button id="sass-btn">SCSS</button>
                 </div>
                 <div class="row-2">
-                    <button id="htmlcss">Html/Css</button>
-                    <button id="nodejs">Node Js</button>
+                    <button id="node-js">Node Js</button>
                     <button id="react">React</button>
-                    <button id="bootstrap">Bootstrap</button>
+                    <button id="bootstrap-btn">Bootstrap</button>
                 </div>
             </div>
             <div class="projects-container">
@@ -77,31 +70,31 @@
                     <img class="sample-image" src = "/resources/fly-away-sample.PNG"></img>
                     <div class="project-info">
                         <a href="https://flyaway.rafaelsilvadev.me" target="_blank"><button>View</button></a>
-                        <a href=""><Img src = "/resources/github-white.svg"></Img></a>
+                        <a href="https://github.com/RS9029/fly-away" target="_blank"><Img src = "/resources/github-white.svg"></Img></a>
                     </div>
                 </div>
                 <div class="latest project">
                     <img class="sample-image" src = "./resources/barber-kutz-thumbnail.PNG"></img>
                     <div class="project-info">
                         <a href="https://barberkutz.rafaelsilvadev.me" target="_blank"><button>View</button></a>
-                        <a href=""><Img src = "/resources/github-white.svg"></Img></a>
+                        <a href="https://github.com/RS9029/barberKutz" target="_blank"><Img src = "/resources/github-white.svg"></Img></a>
                     </div>
                 </div>
                 <div class="js project">
                     <img class="sample-image" src = "/resources/marvel-tumbnail.jpg"></img>
                     <div class="project-info">
                         <a href="https://heroindex.rafaelsilvadev.me" target="_blank"><button>View</button></a>
-                        <a href=""><Img src = "/resources/github-white.svg"></Img></a>
+                        <a href="https://github.com/RS9029/marvelHeroIndex" target="_blank"><Img src = "/resources/github-white.svg"></Img></a>
                     </div>
                 </div>
-                <div class="most-popular js project">
-                    <img class="sample-image" src = "/resources/coming-soon.PNG"></img>
+                <div class="most-popular sass js nodeJs project">
+                    <img class="sample-image" src = "resources/talkR-thumbnail.png"></img>
                     <div class="project-info">
-                        <a href="" target="_blank"><button>View</button></a>
-                        <a href=""><Img src = "/resources/github-white.svg"></Img></a>
+                        <a href="https://talkr-chatapp.herokuapp.com/" target="_blank"><button>View</button></a>
+                        <a href="https://github.com/RS9029/TalkR" target="_blank"><Img src = "/resources/github-white.svg"></Img></a>
                     </div>
                 </div>
-                <div class="js project">
+                <div class="js bootstrap project">
                     <img class="sample-image" src = "/resources/coming-soon.PNG"></img>
                     <div class="project-info">
                         <a href="" target="_blank"><button>View</button></a>
@@ -179,15 +172,15 @@
             <form action="contact.php" method="POST" class="contact-form">
                 <div class="contact-wrapper">
                     <div class="inputs">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="E-mail" required>
-                        <input type="number" name="phoneNumber" placeholder="Contact Number">
-                        <input type="url" name="urls" placeholder="Reference URL">
+                        <input type="text" name="name" placeholder="Name" class="contact-input" required>
+                        <input type="email" name="email" placeholder="E-mail" class="contact-input" required>
+                        <input type="number" name="phoneNumber" placeholder="Contact Number" class="contact-input">
+                        <input type="url" name="urls" placeholder="Reference URL" class="contact-input">
                     </div>
-                    <textarea type="text" id="message-box" name="message" placeholder="Message" required></textarea>
+                    <textarea type="text" id="message-box" name="message" placeholder="Message" class="contact-input" required></textarea>
 
                 </div>
-                <button id="submit-btn" type="submit">Send</button>
+                <button id="submit-btn" type="submit" >Send</button>
             </form>
 
             <img src="resources/star.svg" style="display: none;" alt="star" class="stars" id="star-31">
@@ -220,25 +213,22 @@
 
             <!-- fishes -->
 
-            <img src="/resources/fish.svg" alt="fish" id="fish-1" class="fish">
-            <img src="/resources/fish.svg" alt="fish" id="fish-2" class="fish">
-            <img src="/resources/fish.svg" alt="fish" id="fish-3" class="fish">
+            <img src="resources/fish.svg" alt="fish" id="fish-1" class="fish">
+            <img src="resources/fish.svg" alt="fish" id="fish-2" class="fish">
+            <img src="resources/fish.svg" alt="fish" id="fish-3" class="fish">
 
             <div class="links">
                 <h1>Links</h1>
                 <img src="resources/links-symbol.svg" alt="links">
-                <ul>
+                <ul id="footer-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <ul>
-                    <li><img src="resources/facebook.svg" alt="facebook-icon"></li>
-                    <li><img src="resources/twitter.svg" alt="twitter-icon"></li>
-                    <li><img src="resources/instagram.svg" alt="instagram-icon"></li>
-                    <li><img src="resources/linkedin.svg" alt="linked-in-icon"></li>
-                    <li><img src="resources/github.svg" alt="github-icon"></li>
+                <ul id="footer-icons">
+                    <li><a href="https://www.linkedin.com/in/rafaelsilvadev/" target="_blank"><img src="resources/linkedin.svg" alt="linked-in-icon"></a></li>
+                    <li><a href="https://github.com/RS9029" target="_blank"><img src="resources/github.svg" alt="github-icon"></a></li>
                 </ul>
             </div>
               

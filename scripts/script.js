@@ -8,6 +8,7 @@ const bg = document.body;
 const moonSun = document.getElementById('moon-sun');
 const mainHeadings = document.querySelectorAll('.headings');
 const stars = document.querySelectorAll('.stars');
+const contactInputs = document.querySelectorAll('.contact-input');
 
 
 //functions
@@ -36,6 +37,11 @@ function nightTime(){
     stars.forEach(star =>{
         star.getAttribute('style').includes('none')? star.style.display = 'block': star.style.display = 'none';
     })
+
+    // contact form color change
+    contactInputs.forEach(input=>{
+        input.classList.contains('contact-night')? input.classList.remove('contact-night'):input.classList.add('contact-night');
+    })
     
 
 
@@ -49,11 +55,13 @@ nightModeButton.addEventListener('click', nightTime);
 //PROJECT SELECTOR
 
 const allButton = document.getElementById('all');
-const popularButton = document.getElementById('most-popular');
 const latestButton = document.getElementById('latest');
-const jsButton = document.getElementById('js');
+const jsButton = document.getElementById('js-btn');
 const reactButton = document.getElementById('react');
-const htmlcssButton = document.getElementById('htmlcss');
+const nodeJsButton = document.getElementById('node-js');
+const bootstrapBtn = document.getElementById('bootstrap-btn');
+const sassBtn = document.getElementById('sass-btn')
+
 
 
 const projects = document.querySelectorAll(".project");
@@ -110,10 +118,11 @@ reactButton.addEventListener('click',()=>{
     })
 })
 
-//html/css filter
-htmlcssButton.addEventListener('click',()=>{
+// filter Node JS
+
+nodeJsButton.addEventListener('click',()=>{
     projects.forEach(project =>{
-        if(project.classList.contains('htmlcss')){
+        if(project.classList.contains('nodeJs')){
             project.classList.add('active');
         }
 
@@ -123,11 +132,11 @@ htmlcssButton.addEventListener('click',()=>{
     })
 })
 
-//most popular filter
+// filter Bootstrap
 
-popularButton.addEventListener('click',()=>{
+bootstrapBtn.addEventListener('click',()=>{
     projects.forEach(project =>{
-        if(project.classList.contains('most-popular')){
+        if(project.classList.contains('bootstrap')){
             project.classList.add('active');
         }
 
@@ -137,12 +146,24 @@ popularButton.addEventListener('click',()=>{
     })
 })
 
+// filter Sass
+
+sassBtn.addEventListener('click',()=>{
+    projects.forEach(project =>{
+        if(project.classList.contains('sass')){
+            project.classList.add('active');
+        }
+
+        else{
+            project.classList.remove('active');
+        }
+    })
+})
 
 
 //TYPING 
 
-
-const texts = ['Front-End Developer', 'UI Designer', 'Web Developer']
+const texts = ['Full-Stack Developer', 'UI Designer', 'Web Developer']
 let count = 0;
 let index = 0;
 let currentText = '';

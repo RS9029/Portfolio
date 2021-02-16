@@ -424,6 +424,7 @@ body {
   justify-content: center;
   font: 18px sans-serif;
   background-color: #a6e9ff;
+  border-radius: 15px;
 }
 .resume-container button img {
   transform: scale(0.7);
@@ -503,6 +504,11 @@ body {
   height: 2rem;
   margin-left: 2rem;
   cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+  font-weight: bold;
 }
 .project-info img {
   margin-right: 2rem;
@@ -608,7 +614,15 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid grey;
-  color: white;
+  color: black;
+}
+
+.contact-night {
+  color: white !important;
+  border-color: white !important;
+}
+.contact-night::placeholder {
+  color: white !important;
 }
 
 #message-box {
@@ -621,11 +635,14 @@ body {
 
 #submit-btn {
   width: 10rem;
-  height: 2rem;
+  height: 2.5rem;
   margin-top: 2rem;
   background-color: #4fd8eb;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
 }
 #submit-btn:hover {
   background-color: #75ddff;
@@ -691,6 +708,10 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #005061;
+}
+
+#footer-icons {
+  padding: 0;
 }
 
 #waves-container {
